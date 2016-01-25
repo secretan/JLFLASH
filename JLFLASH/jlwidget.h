@@ -2,6 +2,7 @@
 #define JLWIDGET_H
 
 #include <QWidget>
+#include <jlserialthread.h>
 
 namespace Ui {
 class JLWidget;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::JLWidget *ui;
+    //JLSerialThread *mJLSerialPortThread;
 };
 
 #endif // JLWIDGET_H

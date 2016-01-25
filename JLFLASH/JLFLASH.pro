@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        jlwidget.cpp
+        jlwidget.cpp \
+    jlserialthread.cpp
 
-HEADERS  += jlwidget.h
+HEADERS  += jlwidget.h \
+    jlserialthread.h
 
 FORMS    += jlwidget.ui
